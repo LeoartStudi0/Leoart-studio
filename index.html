@@ -1,488 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Leo.art | Art Classes for Everyone</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ede3">
+  <meta name="description" content="Leo.art is a welcoming creative studio offering art classes, workshops and clubs for kids and adults.">
+  <title>Leo.art | Create · Explore · Belong</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Caveat:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-<header class="site-header">
-  <a class="logo" href="#home">
-    Leo<span>.art</span><i>✦</i>
-  </a>
-
-  <button class="menu-toggle" aria-label="Open menu">
-    ☰
-  </button>
-
-  <nav class="nav">
-    <a href="#classes">Classes</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#faq">FAQ</a>
-  </nav>
-
-  <a href="#schedule" class="button button-gold desktop-book">
-    Book a Class
-  </a>
-</header>
-
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-
-    <div class="botanical botanical-left">
-      ❧
-    </div>
-
-    <div class="hero-copy">
-      <h1>
-        <span class="charcoal">CREATE</span>
-        <span class="olive">EXPLORE</span>
-        <span class="terracotta">BELONG.</span>
-      </h1>
-
-      <p class="script">Art is for everyone.</p>
-
-      <p class="hero-description">
-        Leo.art is a creative studio where kids and adults can
-        experiment, learn new skills, make glorious messes, and
-        discover what happens when they stop worrying about making
-        something perfect.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#classes" class="button button-terra">
-          Explore Classes
-        </a>
-
-        <a href="#schedule" class="button button-outline">
-          View Schedule
-        </a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Leo.art home"><img src="images/leo-art-logo.jpg" alt="Leo.art" width="150" height="88"></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+    <nav id="main-nav" class="nav" aria-label="Main navigation">
+      <a href="#classes">Classes</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#schedule">Schedule</a><a href="#calendar">Calendar</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="button button-gold header-cta" href="https://app.squareup.com/appointments/book/zdpi3f3oegt2z6/LQR8EGEP7BJPE/start" target="_blank" rel="noopener noreferrer">Book with Square ↗</a>
+  </header>
+  <main id="main">
+    <section id="home" class="hero wrap">
+      <div class="hero-copy">
+        <span class="tiny-star" aria-hidden="true">✦ ✧</span>
+        <h1><span>CREATE</span><span>EXPLORE</span><span>BELONG.</span></h1>
+        <p class="script">Art is for everyone.</p>
+        <p>At Leo.art, kids and grown-ups are invited to experiment, learn new skills, make beautiful messes, and discover the joy of creating.</p>
+        <div class="actions"><a href="#classes" class="button button-terra">Explore classes</a><a href="#schedule" class="button button-outline">View schedule</a></div>
       </div>
-    </div>
-
-
-    <div class="hero-collage">
-      <div class="sunburst">✦</div>
-
-      <img
-        class="photo photo-main"
-        src="images/studio-brushes.jpg"
-        alt="Paint brushes in an art studio"
-      >
-
-      <img
-        class="photo photo-small-one"
-        src="images/studio-space.jpg"
-        alt="Leo.art studio"
-      >
-
-      <img
-        class="photo photo-small-two"
-        src="images/artwork.jpg"
-        alt="Student artwork"
-      >
-
-      <div class="tape tape-one"></div>
-    </div>
-
-  </section>
-
-
-  <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee-content">
-      PAINTING ✦ DRAWING ✦ MIXED MEDIA ✦ PRINTMAKING ✦
-      KIDS CLASSES ✦ ADULT WORKSHOPS ✦ COMMUNITY ✦ CREATIVITY ✦
-      PAINTING ✦ DRAWING ✦ MIXED MEDIA ✦
-    </div>
-  </div>
-
-
-  <!-- PHILOSOPHY -->
-  <section class="philosophy" id="about">
-
-    <div class="philosophy-copy">
-      <p class="eyebrow light">Welcome to Leo.art</p>
-
-      <h2>
-        There’s an<br>
-        artist in there.
-      </h2>
-
-      <p class="script light-script">
-        We’re just here to give<br>
-        them some room.
-      </p>
-
-      <p>
-        Leo.art is a creative studio where imagination,
-        curiosity and community come together. We offer
-        hands-on art classes in a welcoming space for
-        children and adults at every skill level.
-      </p>
-
-      <a href="#" class="button button-light-outline">
-        Learn More
-      </a>
-    </div>
-
-
-    <div class="philosophy-image">
-
-      <img
-        src="images/studio-interior.jpg"
-        alt="Inside the Leo.art studio"
-      >
-
-      <div class="paper-note">
-        <span>Creativity</span>
-        <span>Confidence</span>
-        <span>Community</span>
-        <span>Expression</span>
-        <b>✦</b>
+      <div class="hero-collage" aria-label="Art studio inspiration">
+        <div class="sun" aria-hidden="true">☼</div>
+        <img class="collage-img hero-main" src="images/studio-brushes.jpg" alt="Paintbrushes and art supplies" data-fallback="Art supplies">
+        <img class="collage-img hero-side" src="images/studio-space.jpg" alt="A welcoming art studio" data-fallback="Creative space">
+        <img class="collage-img hero-bottom" src="images/artwork.jpg" alt="Colorful handmade artwork" data-fallback="Made with love">
+        <span class="tape" aria-hidden="true"></span>
       </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CLASSES -->
-  <section class="classes" id="classes">
-
-    <div class="section-heading">
-      <p class="eyebrow">Find your place at the table</p>
-
-      <h2>
-        What do you want<br>
-        to make?
-      </h2>
-
-      <div class="paint-line"></div>
-    </div>
-
-
-    <div class="class-grid">
-
-      <article class="class-card kids-card">
-
-        <img
-          src="images/kids-art.jpg"
-          alt="Children painting"
-        >
-
-        <div class="class-card-content">
-          <p>For little artists</p>
-
-          <h3>Kids Classes</h3>
-
-          <span>Explore. Experiment. Get messy.</span>
-
-          <a href="#">
-            Explore Kids Classes →
-          </a>
-        </div>
-
-      </article>
-
-
-      <article class="class-card adult-card">
-
-        <img
-          src="images/adult-art.jpg"
-          alt="Adult painting botanical artwork"
-        >
-
-        <div class="class-card-content">
-          <p>For grown-up artists</p>
-
-          <h3>Adult Classes</h3>
-
-          <span>
-            Make something just because you can.
-          </span>
-
-          <a href="#">
-            Explore Adult Classes →
-          </a>
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- GALLERY -->
-  <section class="gallery" id="gallery">
-
-    <div class="gallery-title">
-      <h2>
-        LOOK WHAT<br>
-        WE MADE.
-      </h2>
-
-      <p class="script">
-        pretty cool, huh?
-      </p>
-    </div>
-
-
-    <div class="gallery-collage">
-
-      <img
-        class="gallery-one"
-        src="images/gallery-1.jpg"
-        alt="Student painting"
-      >
-
-      <img
-        class="gallery-two"
-        src="images/gallery-2.jpg"
-        alt="Ceramic artwork"
-      >
-
-      <img
-        class="gallery-three"
-        src="images/gallery-3.jpg"
-        alt="Illustration"
-      >
-
-      <img
-        class="gallery-four"
-        src="images/gallery-4.jpg"
-        alt="Art studio"
-      >
-
-    </div>
-
-    <a href="#" class="button button-outline">
-      View Gallery →
-    </a>
-
-  </section>
-
-
-  <!-- STORY -->
-  <section class="story">
-
-    <div class="story-image">
-      <img
-        src="images/artist.jpg"
-        alt="Founder of Leo.art"
-      >
-    </div>
-
-    <div class="story-copy">
-
-      <p class="eyebrow terracotta-text">
-        About Leo.art
-      </p>
-
-      <h2>
-        A studio for<br>
-        curious minds
-      </h2>
-
-      <p>
-        Leo.art was created with the belief that creativity
-        belongs to everyone. Our classes are designed to
-        spark imagination, build confidence and create a
-        space where all kinds of artists feel welcome.
-      </p>
-
-      <a href="#" class="button button-gold">
-        Our Story →
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- SCHEDULE -->
-  <section class="schedule" id="schedule">
-
-    <div class="schedule-header">
-
-      <div>
-        <p class="eyebrow light">
-          Upcoming Classes
-        </p>
-
-        <h2>
-          Ready to make<br>
-          something? <span>✦</span>
-        </h2>
+    </section>
+    <div class="marquee" aria-label="Painting, drawing, mixed media, family art, workshops, community"><div class="marquee-track" aria-hidden="true"><span>PAINTING ✦ DRAWING ✦ MIXED MEDIA ✦ FAMILY ART ✦ WORKSHOPS ✦ COMMUNITY ✦ </span><span>PAINTING ✦ DRAWING ✦ MIXED MEDIA ✦ FAMILY ART ✦ WORKSHOPS ✦ COMMUNITY ✦ </span></div></div>
+    <section id="about" class="philosophy">
+      <div class="wrap philosophy-grid">
+        <div><p class="eyebrow">Welcome to Leo.art</p><h2>There’s an<br>artist in there.</h2><p class="script">We’re just here to give them some room.</p><p>Leo.art is a creative place where curiosity and community come together. Our hands-on classes welcome artists of different ages and experience levels.</p><a class="button button-light-outline" href="#story">Our story</a></div>
+        <div class="photo-stage"><img src="images/studio-interior.jpg" alt="Art-making space at the studio" data-fallback="A space to create"><div class="paper-note">CREATIVITY<br>CONFIDENCE<br>COMMUNITY<br>EXPRESSION <span>✦</span></div></div>
       </div>
-
-      <div class="filters">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="kids">Kids</button>
-        <button class="filter" data-filter="adults">Adults</button>
-        <button class="filter" data-filter="workshops">Workshops</button>
+    </section>
+    <section id="classes" class="classes wrap">
+      <p class="eyebrow">Find your place at the table</p><h2>What do you want<br>to make?</h2><div class="brush-mark" aria-hidden="true"></div>
+      <div class="class-grid">
+        <article class="feature-card kids-card"><img src="images/kids-art.jpg" alt="Child exploring art materials" data-fallback="Little artists"><div><p class="eyebrow">For little artists and their families</p><h3>Family Classes</h3><p>Make art and memories together at our Saturday parent + kid sessions.</p><a href="#parent-kid">Explore family classes ↗</a></div></article>
+        <article class="feature-card adult-card"><img src="images/adult-art.jpg" alt="Adult creating a painting" data-fallback="Creative grown-ups"><div><p class="eyebrow">For creative grown-ups</p><h3>Adult Workshops</h3><p>Unwind with Paint & Sip, experiment with resin, or start a junk journal.</p><a href="#schedule">Explore workshops ↗</a></div></article>
       </div>
-
-    </div>
-
-
-    <div class="schedule-grid">
-
-      <article class="course" data-category="kids">
-
-        <img src="images/watercolor.jpg" alt="Watercolor flowers">
-
-        <div class="course-content">
-          <h3>Watercolor Explorers</h3>
-          <p>Ages 7–10</p>
-          <p>Saturday · 10:00 AM</p>
-          <strong>$28 · 6 spots left</strong>
-
-          <a href="#" class="button button-terra">
-            Book
-          </a>
+    </section>
+    <section id="gallery" class="gallery"><div class="wrap"><div class="gallery-head"><h2>LOOK WHAT<br>WE MADE.</h2><p class="script">pretty cool, huh? ↘</p></div><div class="gallery-grid"><img src="images/gallery-1.jpg" alt="Artwork from a creative session" data-fallback="Color & texture"><img src="images/gallery-2.jpg" alt="Handmade art project" data-fallback="Handmade art"><img src="images/gallery-3.jpg" alt="Creative illustration" data-fallback="Little masterpieces"><img src="images/gallery-4.jpg" alt="Studio art supplies and creations" data-fallback="Studio moments"></div><p class="gallery-note">A little peek into the creative world of Leo.art. See the resin class examples below!</p></div></section>
+    <section id="story" class="story wrap"><div class="story-photo"><img src="images/artist.jpg" alt="Leo.art studio artist" data-fallback="Meet the artist"></div><div><p class="eyebrow">About Leo.art</p><h2>A studio for<br>curious minds.</h2><p>We believe creativity belongs to everyone. Whether you’re picking up a brush for the first time or returning to an old passion, there’s a place for you at the table.</p><a class="button button-gold" href="#contact">Say hello</a></div></section>
+    <section id="schedule" class="schedule"><div class="wrap"><div class="schedule-heading"><div><p class="eyebrow">Upcoming and recurring classes</p><h2>Ready to make<br>something? <span>✦</span></h2></div><div class="filters" role="group" aria-label="Filter classes"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter" data-filter="adults" aria-pressed="false">Adults</button><button type="button" class="filter" data-filter="kids" aria-pressed="false">Family</button><button type="button" class="filter" data-filter="workshops" aria-pressed="false">Workshops</button><button type="button" class="filter" data-filter="clubs" aria-pressed="false">Clubs</button></div></div>
+        <div class="schedule-grid">
+          <article class="course" data-category="adults workshops" id="paint-sip"><img src="images/paint-and-sip.jpg" alt="Purple and lavender floral canvas painting featured in the first Paint and Sip class"><div class="course-content"><p class="course-type">WEEKLY CLASS</p><h3>Paint & Sip</h3><p><strong>Every Tuesday</strong></p><p>5:00 PM – 6:30 PM</p><p>Unwind, sip, and make something uniquely yours.</p><p class="course-price"><strong>$30 per attendee</strong> · $10 non-refundable deposit · $20 balance</p><p class="capacity-note">Capacity: 25 seats per session</p><button type="button" class="button button-terra book-trigger" data-class="paint-sip">Book with Square ↗</button></div></article>
+          <article class="course" data-category="clubs" id="trading-cards"><img src="images/artist-trading-cards.jpg" alt="Miniature artist trading cards" data-fallback="Trading Card Club"><div class="course-content"><p class="course-type">MONTHLY CLUB · OPEN TO ALL</p><h3>Artist Trading Card Club</h3><p><strong>Third Wednesday of every month</strong></p><p>Time to be announced</p><p>Create, collect, and swap tiny original works of art.</p><p class="course-price"><strong>$5 per attendee</strong> · $5 cover due at booking</p><p class="capacity-note">Capacity: Unlimited attendees</p><button type="button" class="button button-terra book-trigger" data-class="trading-cards">Book with Square ↗</button></div></article>
+          <article class="course" data-category="adults workshops" id="resin"><img src="images/resin-class-1.jpg" alt="Colorful resin stained glass pieces displayed on a green shelf"><div class="resin-photo-strip" aria-label="Resin stained glass class artwork examples"><img src="images/resin-class-2.jpg" alt="Five colorful resin stained glass floral artworks" loading="lazy"><img src="images/resin-class-3.jpg" alt="Five resin stained glass flower designs" loading="lazy"></div><div class="course-content"><p class="course-type">ALTERNATING FRIDAYS</p><h3>Resin Stained Glass</h3><p><strong>Every other Friday</strong></p><p>5:30 PM – 8:30 PM</p><p>Explore color and light through resin art.</p><p class="course-price"><strong>$40 per attendee</strong> · $15 non-refundable deposit · $25 balance</p><p class="capacity-note">Capacity: 12 seats per session</p><button type="button" class="button button-terra book-trigger" data-class="resin">Book with Square ↗</button></div></article>
+          <article class="course" data-category="kids workshops" id="parent-kid"><img src="images/parent-kid-art.jpg" alt="Parent and child making art together" data-fallback="Parent + Kid Art"><div class="course-content"><p class="course-type">WEEKLY FAMILY CLASS</p><h3>Parent + Kid Art</h3><p><strong>Every Saturday</strong></p><p>12:00 PM – 2:00 PM</p><p>Quality time, colorful hands, and shared creativity.</p><p class="course-price"><strong>$50 per booking (confirm whether this covers a pair)</strong> · $20 non-refundable deposit · $30 balance</p><p class="capacity-note">Capacity: 25 seats per session</p><button type="button" class="button button-terra book-trigger" data-class="parent-kid">Book with Square ↗</button></div></article>
+          <article class="course" data-category="adults workshops" id="junk-journal"><img src="images/junk-journaling.jpg" alt="Handmade junk journal with layered paper" data-fallback="Junk Journaling"><div class="course-content"><p class="course-type">ALTERNATING FRIDAYS</p><h3>Junk Journal</h3><p><strong>Alternates with Resin Stained Glass</strong></p><p>6:00 PM – 7:00 PM</p><p>Alternating Fridays beginning December 11, 2026</p><p>Transform scraps, memories, and paper into something personal.</p><p class="course-price"><strong>$25 per attendee</strong> · $10 non-refundable deposit · $15 balance</p><p class="capacity-note">Capacity: 25 seats per session</p><button type="button" class="button button-terra book-trigger" data-class="junk-journal">Book with Square ↗</button></div></article>
         </div>
+        <p class="schedule-footnote">Booking and checkout are handled securely by Square. Please verify class availability, prices, deposits, and cancellation terms on the Square booking page before paying. The calendar on this website is informational and does not show live seat availability.</p>
+      </div></section>
 
-      </article>
-
-
-      <article class="course" data-category="adults">
-
-        <img src="images/ceramics.jpg" alt="Handbuilt ceramic cup">
-
-        <div class="course-content">
-          <h3>Handbuilt Ceramics</h3>
-          <p>Ages 16+</p>
-          <p>Sunday · 2:00 PM</p>
-          <strong>$35 · 4 spots left</strong>
-
-          <a href="#" class="button button-terra">
-            Book
-          </a>
-        </div>
-
-      </article>
-
-
-      <article class="course" data-category="workshops">
-
-        <img src="images/mixed-media.jpg" alt="Mixed media artwork">
-
-        <div class="course-content">
-          <h3>Mixed Media Basics</h3>
-          <p>Ages 16+</p>
-          <p>Wednesday · 6:00 PM</p>
-          <strong>$35 · 8 spots left</strong>
-
-          <a href="#" class="button button-terra">
-            Book
-          </a>
-        </div>
-
-      </article>
-
-
-      <article class="course" data-category="adults">
-
-        <img src="images/botanical.jpg" alt="Botanical drawing">
-
-        <div class="course-content">
-          <h3>Botanical Illustration</h3>
-          <p>Ages 16+</p>
-          <p>Saturday · 1:00 PM</p>
-          <strong>$32 · 5 spots left</strong>
-
-          <a href="#" class="button button-terra">
-            Book
-          </a>
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- CTA -->
-  <section class="final-cta">
-
-    <h2>
-      You don’t have to be<br>
-      “good at art” to make art.
-    </h2>
-
-    <p class="script">
-      You just have to start.
-    </p>
-
-    <a href="#schedule" class="button button-cream">
-      Find a Class →
-    </a>
-
-  </section>
-
-</main>
-
-
-<footer class="footer" id="faq">
-
-  <div>
-    <div class="footer-logo">
-      Leo<span>.art</span><i>✦</i>
-    </div>
-
-    <p>
-      CREATE · EXPLORE · BELONG
-    </p>
-  </div>
-
-
-  <nav>
-    <a href="#classes">Classes</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#">FAQ</a>
-    <a href="#">Contact</a>
-  </nav>
-
-
-  <div>
-    <p>Studio location</p>
-    <p>hello@leo.art</p>
-    <p>@leo.art</p>
-  </div>
-
-
-  <div>
-    <strong>Studio Hours</strong>
-    <p>Mon–Fri · 10 AM–8 PM</p>
-    <p>Saturday · 9 AM–6 PM</p>
-    <p>Sunday · Closed</p>
-  </div>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+    <section id="calendar" class="calendar-section"><div class="wrap">
+      <p class="eyebrow">Plan your creative season</p><h2>Studio calendar <span>✦</span></h2>
+      <p>Explore December 2026, January 2027, and February 2027. Select a class to reserve your seats.</p>
+      <div class="calendar-controls" role="group" aria-label="Choose month">
+        <button class="calendar-month active" type="button" data-month="2026-12" aria-pressed="true">December 2026</button>
+        <button class="calendar-month" type="button" data-month="2027-01" aria-pressed="false">January 2027</button>
+        <button class="calendar-month" type="button" data-month="2027-02" aria-pressed="false">February 2027</button>
+      </div>
+      <div class="calendar-key"><span><i class="dot terra-dot"></i>Paint & Sip</span><span><i class="dot gold-dot"></i>Trading Card Club</span><span><i class="dot olive-dot"></i>Parent + Kid</span><span><i class="dot brown-dot"></i>Alternating Friday workshops</span></div>
+      <div class="calendar-board"><h3 id="calendar-title">December 2026</h3><div class="calendar-grid" id="calendar-grid" aria-live="polite"></div></div>
+      <p class="calendar-notice" id="calendar-notice">Resin Stained Glass begins Friday, December 4, 2026; Junk Journal begins Friday, December 11, 2026. They alternate Fridays.</p>
+    </div></section>
+    <section class="final-cta"><div class="wrap"><span aria-hidden="true">✧</span><h2>You don’t have to be<br>“good at art” to make art.</h2><p class="script">You just have to start.</p><a href="#schedule" class="button button-cream">Find your class ↗</a></div></section>
+  </main>
+  <section id="cancellation-policy" class="policy-section"><div class="wrap">
+    <p class="eyebrow">Reservations & flexibility</p><h2>Plans change. Creativity stays.</h2>
+    <p>Cancel at least <strong>48 hours before your class begins</strong> to qualify for a future-class voucher for the entire verified amount you paid, including the non-refundable cash deposit and any balance, as studio credit rather than a cash refund. After studio verification, the voucher is valid for 12 calendar months from the cancellation date and may be applied to future classes. Unused credit can be applied to additional classes before it expires. Cancellations within 48 hours are not eligible for a voucher under this policy. All online and in-studio payments must be verified by the studio before voucher value is issued.</p>
+    <p>Artist Trading Card Club cancellations are handled directly by the studio until its meeting time is announced.</p><p>To cancel or request eligible studio credit, contact Leo.art directly with your Square booking confirmation. Square reservations are not managed by this website.</p><p><a class="button button-terra" href="https://app.squareup.com/appointments/book/zdpi3f3oegt2z6/LQR8EGEP7BJPE/start" target="_blank" rel="noopener noreferrer">Open Square Booking ↗</a></p>
+    <p class="booking-small">Vouchers expire 12 calendar months after cancellation. Voucher codes are not automatically activated or redeemable at Square checkout. The studio must verify payment and issue the credit manually before the voucher can be used.</p>
+  </div></section>
+  <footer id="contact" class="footer"><div class="wrap footer-grid"><div><img src="images/leo-art-logo.jpg" alt="Leo.art" class="footer-logo"><p>CREATE · EXPLORE · BELONG</p></div><nav aria-label="Footer navigation"><a href="#classes">Classes</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#schedule">Schedule</a></nav><div><h3>Get in touch</h3><p>Contact details coming soon.</p><p>Ask about classes, clubs, or workshops.</p></div><div><h3>Visit the studio</h3><p>Location and studio hours coming soon.</p><p>We can’t wait to create with you.</p></div></div></footer>
 </body>
 </html>
