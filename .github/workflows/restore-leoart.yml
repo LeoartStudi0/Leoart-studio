@@ -1,0 +1,34 @@
+name: Restore latest Leo.art site files
+on:
+  push:
+    branches: [refresh-complete-leoart-site]
+    paths:
+      - '.github/workflows/restore-leoart.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Unpack website assets and restore source
+        shell: bash
+        run: |
+          set -euo pipefail
+          unzip -q leo-art-website-gallery-updated.zip -d "$RUNNER_TEMP/leoart"
+          test -f "$RUNNER_TEMP/leoart/leo-art-website/index.html"
+          cp "$RUNNER_TEMP/leoart/leo-art-website/index.html" index.html
+          cp "$RUNNER_TEMP/leoart/leo-art-website/styles.css" styles.css
+          cp "$RUNNER_TEMP/leoart/leo-art-website/script.js" script.js
+          mkdir -p images
+          cp "$RUNNER_TEMP"/leoart/leo-art-website/images/*.jpg images/
+          # Custom domain CNAME is deliberately retained.
+          git rm -f leo-art-website-gallery-updated.zip style.css 2>/dev/null || true
+          git add index.html styles.css script.js images
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Restore complete Leo.art source and images from archive"
+            git push
+          fi
