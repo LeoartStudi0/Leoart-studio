@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3ede3">
+<meta name="description" content="Reserve an art class at Leo.art using the official Square Appointments booking calendar.">
+<title>Reserve Your Seat | Leo.art</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.reserve-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1380px;margin:0 auto;padding:14px clamp(22px,5vw,72px);border-bottom:1px solid #382c2322}.reserve-nav img{width:132px;height:78px;object-fit:contain}.reserve-nav a:not(.button){font-weight:600}
+.reserve-page{max-width:1250px;padding:70px clamp(22px,5vw,72px) 100px;margin:auto}
+.reserve-page h1{font:600 clamp(67px,9vw,126px)/.88 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;margin:12px 0 28px}
+.reserve-lead{font-size:17px;line-height:1.75;max-width:700px}
+.reserve-columns{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:38px;align-items:start;margin-top:45px}
+.reserve-calendar{padding:42px;min-height:270px;background:#e8dfd0;border:1px solid #6e6b4138;border-radius:14px}
+.reserve-calendar h2{font:600 clamp(36px,5vw,62px)/.95 'Cormorant Garamond',Georgia,serif;margin:0 0 16px}
+.reserve-calendar p{line-height:1.7}
+.reserve-calendar .button{margin:14px 0 6px}
+.reserve-steps{padding:30px;background:#6e6b41;color:#fff;border-radius:14px}
+.reserve-steps h2{font:600 40px/.95 'Cormorant Garamond',Georgia,serif;margin:0 0 22px}
+.reserve-steps ol{padding-left:22px;line-height:1.65}.reserve-steps li{padding:0 0 13px}
+.reserve-small{font-size:13px;color:#6e6b41;line-height:1.65;margin-top:20px}
+.reserve-footer{padding:35px;text-align:center;background:#382c23;color:#f3ede3}
+@media(max-width:800px){.reserve-columns{grid-template-columns:1fr}.reserve-page{padding-top:45px}.reserve-calendar{padding:26px}.reserve-nav img{width:110px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#reserve">Skip to booking</a>
+<header class="reserve-nav"><a href="index.html" aria-label="Leo.art homepage"><img src="images/leo-art-logo.jpg" alt="Leo.art"></a><a href="index.html#schedule">← Browse classes</a></header>
+<main id="reserve" class="reserve-page">
+<p class="eyebrow">Leo.art · Online reservations</p>
+<h1>Reserve<br>your seat. <span style="color:#b07e1e">✦</span></h1>
+<p class="reserve-lead">Choose your art class and the date that works for you. Leo.art uses <strong>Square Appointments</strong> for the live class calendar, remaining availability, and secure deposits or cover charges.</p>
+<div class="reserve-columns">
+<section class="reserve-calendar" aria-labelledby="square-booking-heading">
+<h2 id="square-booking-heading">View live classes & availability</h2>
+<p>Open our Square booking calendar to select a class, see bookable times, and finish your reservation securely.</p>
+<div aria-label="Official Square Appointments booking widget" class="square-embed">
+<!-- Start Square Appointments Embed Code -->
+<script src='https://square.site/appointments/buyer/widget/zdpi3f3oegt2z6/LQR8EGEP7BJPE.js'></script>
+<!-- End Square Appointments Embed Code -->
+</div>
+<p><a class="button button-terra" href="https://app.squareup.com/appointments/book/zdpi3f3oegt2z6/LQR8EGEP7BJPE/start" target="_blank" rel="noopener noreferrer">View Square Calendar ↗</a></p>
+<p class="reserve-small">Square may open booking in a separate tab or window. If the widget is blocked, use the button above. Leo.art's decorative three-month studio calendar does not reflect live capacity.</p>
+</section>
+<aside class="reserve-steps">
+<h2>How it works</h2>
+<ol>
+<li><strong>Choose your class.</strong> Select a class listed in Square.</li>
+<li><strong>Choose your date.</strong> See actual bookable sessions and availability.</li>
+<li><strong>Reserve securely.</strong> Complete the required payment through Square.</li>
+</ol>
+<p>Any remaining class balance can be arranged with the studio for payment online or in person.</p>
+</aside>
+</div>
+<section style="margin-top:60px;max-width:850px;line-height:1.75"><h2 style="font:600 42px 'Cormorant Garamond',serif;margin-bottom:12px">Cancellation & studio credit</h2><p>For cancellations made at least 48 hours before class, Leo.art offers a studio-credit voucher for the entire verified amount paid. The credit is valid for 12 months from cancellation. Cancellations made within 48 hours do not qualify under the standard policy. Studio staff currently verify and issue credits manually; Square does not automatically apply these vouchers.</p></section>
+</main>
+<footer class="reserve-footer">Leo.art · Create · Explore · Belong</footer>
+</body></html>
