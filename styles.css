@@ -42,3 +42,23 @@
 
 /* New studio artwork gallery photo */
 .gallery-grid img[src="images/studio-gallery-wall.jpg"] { object-fit: cover; object-position: center; }
+
+
+/* Studio tour — real Leo.art classroom photography */
+.studio-space-section{padding:100px 0;background:#e9dfcf;color:var(--ink)}
+.studio-space-intro{display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:44px;margin-bottom:44px}
+.studio-space-intro h2{font:600 clamp(60px,7vw,112px)/.85 var(--serif);letter-spacing:-.035em;margin:12px 0}
+.studio-space-intro h2 em{font-weight:400;color:var(--terra)}
+.studio-space-intro>p{font-size:16px;line-height:1.8;max-width:430px}
+.studio-space-mosaic{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:18px}
+.studio-space-mosaic figure{min-width:0;margin:0;background:var(--paper);padding:9px 9px 15px;box-shadow:0 8px 24px #382c2319;transition:transform .2s}
+.studio-space-mosaic figure:nth-child(even){transform:rotate(1deg)}
+.studio-space-mosaic figure:nth-child(odd){transform:rotate(-.6deg)}
+.studio-space-mosaic figure:hover{transform:translateY(-5px) rotate(0)}
+.studio-space-mosaic img{width:100%;height:260px;object-fit:cover;border-radius:2px}
+.studio-space-mosaic .studio-space-feature{grid-row:span 2}
+.studio-space-mosaic .studio-space-feature img{height:610px}
+.studio-space-mosaic figcaption{font-family:var(--script);font-size:23px;padding:9px 6px 0;color:var(--terra)}
+.studio-space-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:38px}
+@media(max-width:900px){.studio-space-intro{grid-template-columns:1fr;gap:8px}.studio-space-mosaic{grid-template-columns:repeat(2,minmax(0,1fr))}.studio-space-mosaic .studio-space-feature{grid-row:auto;grid-column:span 2}.studio-space-mosaic .studio-space-feature img{height:420px}}
+@media(max-width:600px){.studio-space-section{padding:70px 0}.studio-space-mosaic{gap:12px}.studio-space-mosaic img{height:190px}.studio-space-mosaic .studio-space-feature img{height:280px}.studio-space-mosaic figcaption{font-size:19px}}
